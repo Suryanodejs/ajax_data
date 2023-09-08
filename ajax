@@ -1,0 +1,59 @@
+   <form action="<?php echo base_url('add-cer');?>" method="post"  enctype="multipart/form-data">
+                                    <div class="row">
+                                        <!-- <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="name">From Date</label>
+                                            <input type="date" class="form-control" name="from_date"   required>
+                                        </div> -->
+                                        <!-- <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="name">To Date</label>
+                                            <input type="date" class="form-control" name="to_date"    required>
+                                        </div> -->
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="name">Office</label>
+                                            <input type="text" class="form-control" name="office"  placeholder="office"  required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label>Trade</label>
+                                            <input type="text" name="trade" class="form-control"  id="courses-input" placeholder="Trade" required>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="emai">Student Name</label>
+                                           <select class="form-control"  id="user-select" aria-label="Default select example" name="name">
+                                               
+                                                                  <option selected>Select  course</option>
+                                                                  <?php foreach($name as $value){ ?>
+                                                                  
+                                                                 <option value="<?php echo $value->id;?>"><?php echo $value->full_name;?></option>
+                                                                 <?php }?> 
+                                                                <!--<option value="2">Two</option>-->
+                                                                <!--  <option value="3">Three</option>-->
+                                                                  </select>
+                                            </div>
+                                        <!--<div class="col-md-6 col-sm-12 form-group">-->
+                                        <!--    <label for="emai">Courses</label>-->
+                                        <!--    <input type="text" name="courses" class="form-control"  placeholder="Courses" required>-->
+                                        <!--</div>-->
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="name">P P No </label>
+                                            <input type="text" class="form-control" name="p_p_no" id="passport_no-input" placeholder="P P No" required>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label for="name">Remark</label>
+                                            <input type="text" class="form-control" name="remark"  placeholder="Remark" required>
+                                        </div> 
+                                        
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                        <label for="name">Grade</label>
+                                            <input type="" class="form-control" name="grade"  value="" placeholder="Grade" required>
+                                        </div> 
+                                            <div class="col-md-6 col-sm-12 form-group">
+                                        <label for="name">Mark</label>
+                                            <input type="" class="form-control" name="mark"  value="" placeholder="Mark" required>
+                                        </div>
+                                      
+                                        
+                                    </div>
+                                        <button type="submit" name="submit" class="btn btn-sm btn-primary">Submit</button>
+                                    </div>
+                                </form>
